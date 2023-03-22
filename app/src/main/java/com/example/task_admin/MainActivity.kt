@@ -5,8 +5,6 @@ import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.*
-import androidx.compose.material.MaterialTheme
-import androidx.compose.material.Surface
 import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
@@ -25,14 +23,14 @@ class MainActivity : ComponentActivity() {
         setContent {
             Task_AdminTheme {
                 // A surface container using the 'background' color from the theme
-            tskAdmn()
+            TskAdmn()
             }
         }
     }
 }
 
 @Composable
-fun tskcomplete(modifier: Modifier=Modifier) {
+fun TskComplete(modifier: Modifier=Modifier) {
     Column(
         modifier = Modifier
             .fillMaxWidth()
@@ -57,9 +55,9 @@ fun tskcomplete(modifier: Modifier=Modifier) {
 
 @Preview(showBackground = true)
 @Composable
-fun tskAdmn() {
+fun TskAdmn() {
     Task_AdminTheme {
-        tskcomplete(modifier = Modifier
+        TskComplete(modifier = Modifier
             .fillMaxSize()
             .wrapContentWidth(Alignment.CenterHorizontally)
         )
